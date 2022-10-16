@@ -3,7 +3,7 @@ package com.example.springcrudapilivesession.account.controller;
 import com.example.springcrudapilivesession.account.dto.AccountReqDto;
 import com.example.springcrudapilivesession.account.dto.LoginReqDto;
 import com.example.springcrudapilivesession.account.service.AccountService;
-import com.example.springcrudapilivesession.dto.GlobalResDto;
+import com.example.springcrudapilivesession.global.GlobalResDto;
 import com.example.springcrudapilivesession.jwt.util.JwtUtil;
 import com.example.springcrudapilivesession.security.user.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;

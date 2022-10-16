@@ -1,4 +1,4 @@
-package com.example.springcrudapilivesession.dto;
+package com.example.springcrudapilivesession.global;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -6,7 +6,7 @@ import com.example.springcrudapilivesession.account.entity.Account;
 import com.example.springcrudapilivesession.account.entity.RefreshToken;
 import com.example.springcrudapilivesession.account.repository.AccountRepository;
 import com.example.springcrudapilivesession.account.repository.RefreshTokenRepository;
-import com.example.springcrudapilivesession.dto.GlobalResDto;
+import com.example.springcrudapilivesession.global.GlobalResDto;
 import com.example.springcrudapilivesession.jwt.dto.TokenDto;
 import com.example.springcrudapilivesession.jwt.util.JwtUtil;
 import lombok.RequiredArgsConstructor;

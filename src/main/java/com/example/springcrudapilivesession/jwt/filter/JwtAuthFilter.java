@@ -1,6 +1,6 @@
 package com.example.springcrudapilivesession.jwt.filter;
 
-import com.example.springcrudapilivesession.dto.GlobalResDto;
+import com.example.springcrudapilivesession.global.GlobalResDto;
 import com.example.springcrudapilivesession.jwt.util.JwtUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -30,13 +30,13 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         if(accessToken != null) {
             if(!jwtUtil.tokenValidation(accessToken)){
-                jwtExceptionHandler(response, "AccessToken Expired", HttpStatus.BAD_REQUEST);
+                jwtExceptionHandler(response, "AccessToken Error", HttpStatus.BAD_REQUEST);
                 return;
             }
             setAuthentication(jwtUtil.getEmailFromToken(accessToken));
         }else if(refreshToken != null) {
             if(!jwtUtil.refreshTokenValidation(refreshToken)){
-                jwtExceptionHandler(response, "RefreshToken Expired", HttpStatus.BAD_REQUEST);
+                jwtExceptionHandler(response, "RefreshToken Error", HttpStatus.BAD_REQUEST);
                 return;
             }
             setAuthentication(jwtUtil.getEmailFromToken(refreshToken));
